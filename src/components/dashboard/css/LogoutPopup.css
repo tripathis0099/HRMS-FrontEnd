@@ -1,0 +1,60 @@
+.logout-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.logout-popup {
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logout-header {
+  background-color: #4D007D;
+  color: white;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logout-message {
+  padding: 1.5rem 1rem;
+  font-size: 16px;
+  color: #333;
+}
+
+.logout-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.cancel-btn {
+  background-color: #4D007D;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #FF3C3C;
+  border: 1px solid #FF3C3C;
+  padding: 8px 24px;
+  border-radius: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    background-color: #f4f4f9;
+   
+    height: 100vh; /* Ensure the body takes the full height */
+}
+
+.dashboard{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    justify-items: start;
+    align-items: start;
+}
+
+/* Top Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    margin-left: 250px; /* To make space for the sidebar */
+    top: 0;
+    width: calc(100% - 250px); /* Ensure the header spans the full width minus the sidebar */
+    position: fixed; /* Keep the header at the top */
+    z-index: 10; /* Ensure the header stays on top */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 0; /* Remove top margin */
+}
+
+ .add-candidate-btn {
+    background-color: #4A148C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px !important;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.add-candidate-btn:hover {
+    background-color: #6A1B9A;
+}
+
+/* Main Content Area */
+.main-content {
+    height: 100%;
+    width: 100%;
+}
+
+/* Candidates Section */
+.candidates {
+    margin-top: 0; /* Remove any space before candidates section */
+}
+
+.candidates h2 {
+    margin-bottom: 10px; /* Reduced margin to eliminate unnecessary space */
+}
+
+.candidates .filter {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.candidates table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.candidates th,
+.candidates td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.candidates th {
+    background-color: #4A148C;
+    color: white;
+    font-size: 16px;
+}
+
+.candidates td {
+    font-size: 14px;
+}
+
+.candidates tr:hover {
+    background-color: #f1f1f1;
+}
+
+.candidates .filter select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.candidates button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.candidates button:hover {
+    background-color: #6A1B9A;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .header-left .search-bar input {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .header {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .header-left .search-bar input {
+        width: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .candidates table {
+        font-size: 12px;
+    }
+}

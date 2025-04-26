@@ -1,0 +1,38 @@
+.header-comp {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+    margin: 0px;
+  }
+
+  .header-right{
+    display: flex;
+    gap: 4px;
+  }
+  .header-comp .header-left {
+    display: flex;
+    gap: 8px;
+  }
+  .header .search-bar input {
+    font-size: 16px;
+    width: 300px;
+  }
+
+  .header-comp .header-left select{
+    height: 100%;
+  } 
+  
+  .header .add-candidate-btn {
+    background-color: #4A148C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .header .add-candidate-btn:hover {
+    background-color: #6A1B9A;
+  }
+  

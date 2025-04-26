@@ -1,0 +1,144 @@
+/* src/components/dashboard/css/Leave.css */
+/* You can add this to your existing CSS files or create a new one */
+
+.status-pending {
+    background-color: #FEF3C7;
+    color: #92400E;
+    border: 1px solid #F59E0B;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .status-approved {
+    background-color: #D1FAE5;
+    color: #065F46;
+    border: 1px solid #10B981;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .status-rejected {
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    border: 1px solid #EF4444;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .add-button:hover {
+    background-color: #2563EB;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  /* --- LAYOUT -------------------------------------------------- */
+.leave-layout{
+  display:flex;
+  gap:24px;
+}
+
+.table-wrapper{
+  flex:2;
+}
+
+.calendar-wrapper{
+  flex:1;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+  padding:12px;
+  min-width:280px;          /* keeps a nice size on small screens */
+}
+
+/* --- CALENDAR DECORATION ------------------------------------ */
+.react-calendar{
+  border:none;              /* remove default gray border */
+  width:100%;
+}
+
+.leave-day abbr{
+  border:2px solid #6A1B9A; /* purple outline around the day */
+  border-radius:4px;
+  display:block;
+  padding:6px 0;
+}
+
+.leave-badge{
+  background:#6A1B9A;
+  color:#fff;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  font-size:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-inline:auto;
+  margin-top:2px;
+}
+
+/* --- APPROVED LIST BELOW THE CALENDAR ----------------------- */
+.approved-block{
+  margin-top:20px;
+}
+
+.approved-item{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:12px;
+}
+
+.approved-item img{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.approved-item .name{
+  font-weight:600;
+}
+
+.approved-item .date{
+  font-size:0.85rem;
+  color:#666;
+}
+
+abbr{
+  color: #393939;
+}
+
+.react-calendar__navigation{
+ background-color: #6A1B9A;
+ border-radius: 20px 20px 0px 0px;
+}
+
+/* keep your existing .status‑* and other styles here */

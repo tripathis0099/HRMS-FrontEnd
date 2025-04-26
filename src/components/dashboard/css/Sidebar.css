@@ -1,0 +1,148 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: white !important; /* White background */
+  color: #333; /* Dark text for contrast */
+  position: relative;
+  padding: 8px 4px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Logo Section */
+.logo {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo a {
+  color: #6a1b9a; /* Purple color for logo */
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: flex;
+  color: #333;
+  align-items: center;
+}
+
+.logo a::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6a1b9a; /* Purple border */
+  margin-right: 8px;
+}
+
+/* Search Bar */
+.search-container {
+  padding: 10px 20px 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* Light gray for search bar */
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-bar .search-icon {
+  color: #666;
+  right: 30px;
+  top: 40%;
+}
+
+/* Section Headers */
+.section-header {
+  color: #888; /* Lighter gray for section headers */
+  font-weight: 400;
+  font-size: 14px;
+  padding: 20px 20px 10px;
+}
+
+/* Menu and Other Links */
+.menu, .others {
+  padding: 0;
+}
+
+.menu ul, .others ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li, .others ul li {
+  padding: 0;
+}
+
+.menu ul li a, .others ul li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #333; /* Dark text for normal state */
+  text-decoration: none;
+  transition: background-color 0.2s ease, padding 0.2s ease;
+  font-size: 16px;
+}
+
+/* Hover and Active States */
+.menu ul li a:hover, .others ul li a:hover {
+  background-color: #f3e5f5; /* Light purple hover effect */
+}
+
+.menu ul li a.active {
+  border-radius: 10px;
+  background-color: #6a1b9a; /* Purple highlight for active links */
+  color: white; /* White text on active state */
+}
+
+.menu ul li a svg, .others ul li a svg {
+  margin-right: 10px;
+  stroke: currentColor;
+}
+
+/* Spacer for pushing logout to bottom */
+.spacer {
+  flex-grow: 1;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+    overflow: hidden;
+  }
+
+  .logo a span, .menu ul li a span, .others ul li a span, .section-header {
+    display: none;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .menu ul li a, .others ul li a {
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .menu ul li a svg, .others ul li a svg {
+    margin-right: 0;
+  }
+}
