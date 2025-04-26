@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./css/Employee.css";
-import EmployeeHeader from './employeeHEader';
+import EmployeeHeader from './employeeHeader';
 
 const Employees = ({ employees, setSearchTerm, setSortBy, onEditClick, refreshEmployees }) => {
   const [filteredEmployees, setFilteredEmployees] = useState(employees);
